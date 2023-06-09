@@ -16,8 +16,8 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={inter.className}>
-        <div className="flex min-h-screen flex-col justify-center bg-white text-black">
-          <div className="absolute z-0 h-full w-full bg-[url('/grid.svg')] opacity-10 [background-position:calc(100%+1px)_calc(100%+30px)]"></div>
+        <div className="flex min-h-screen flex-col bg-white text-black">
+          <div className="absolute z-0 h-full w-full bg-[url('/grid.svg')] opacity-10 bg-repeat"></div>
           {children}
         </div>
       </body>
