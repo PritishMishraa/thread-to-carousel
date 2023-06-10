@@ -66,7 +66,7 @@ export function InputReactHookForm() {
           name="threadLink"
           render={({ field }) => (
             <FormItem>
-              <FormLabel className="text-base">Twitter Thread Link</FormLabel>
+              <FormLabel className="text-base">Twitter Post Link</FormLabel>
               <FormControl>
                 <Input
                   className="bg-white"
@@ -165,7 +165,7 @@ export function InputReactHookForm() {
 
 export default function Section() {
   return (
-    <div className="mx-auto mb-10 mt-12 max-w-md px-2.5 sm:max-w-xl sm:px-0 z-10 w-full">
+    <div className="mx-auto mb-10 mt-12 max-w-md px-2.5 sm:max-w-xl sm:px-0 w-full">
       <InputReactHookForm />
     </div>
   );
