@@ -69,6 +69,7 @@ export function InputReactHookForm() {
               <FormLabel className="text-base">Twitter Thread Link</FormLabel>
               <FormControl>
                 <Input
+                  className="bg-white"
                   placeholder="https://twitter.com/PritishhMishraa/status/1666106369341288453"
                   {...field}
                 />
@@ -98,7 +99,7 @@ export function InputReactHookForm() {
           control={form.control}
           name="theme"
           render={({ field }) => (
-            <FormItem className="flex flex-row items-center justify-between rounded-lg border p-4">
+            <FormItem className="flex flex-row items-center justify-between rounded-lg border p-4 bg-white">
               <FormLabel className="text-base">Theme</FormLabel>
               <div className="relative w-max">
                 <FormControl>
@@ -126,7 +127,7 @@ export function InputReactHookForm() {
           control={form.control}
           name="show_engagement"
           render={({ field }) => (
-            <FormItem className="flex flex-row items-center justify-between rounded-lg border p-4">
+            <FormItem className="flex flex-row items-center justify-between rounded-lg border p-4 bg-white">
               <div className="space-y-0.5">
                 <FormLabel className="text-base">Show Engagement</FormLabel>
               </div>
@@ -143,7 +144,7 @@ export function InputReactHookForm() {
           control={form.control}
           name="show_details"
           render={({ field }) => (
-            <FormItem className="flex flex-row items-center justify-between rounded-lg border p-4">
+            <FormItem className="flex flex-row items-center justify-between rounded-lg border p-4 bg-white">
               <div className="space-y-0.5">
                 <FormLabel className="text-base">Show Details</FormLabel>
               </div>
