@@ -1,3 +1,4 @@
+import Background from "@/components/shared/background";
 import "./globals.css";
 import { Inter } from "next/font/google";
 
@@ -16,9 +17,9 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={inter.className}>
-        <div className="flex min-h-screen flex-col bg-white text-black">
-          <div className="absolute z-0 h-full w-full bg-[url('/grid.svg')] opacity-10 bg-repeat"></div>
+        <div className="flex flex-col text-black">
           {children}
+          <Background />
         </div>
       </body>
     </html>
