@@ -18,9 +18,12 @@ import {
 } from "@/components/ui/form";
 
 const FormSchema = z.object({
-  username: z.string().min(2, {
-    message: "Username must be at least 2 characters.",
-  }),
+  threadLink: z
+    .string()
+    .url()
+    .regex(/twitter\.com\/.+\/status\/\d+$/, {
+      message: "Invalid twitter thread link",
+    }),
   isThread: z.boolean().default(false).optional(),
 });
 
@@ -41,7 +44,7 @@ export function InputReactHookForm() {
       >
         <FormField
           control={form.control}
-          name="username"
+          name="threadLink"
           render={({ field }) => (
             <FormItem>
               <FormLabel className="text-base">Twitter Thread Link</FormLabel>
