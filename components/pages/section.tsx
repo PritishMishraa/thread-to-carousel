@@ -18,7 +18,7 @@ import {
 } from "@/components/ui/form";
 import { ChevronDown } from "lucide-react";
 import { cn } from "@/lib/utils";
-import { Switch } from "./ui/switch";
+import { Switch } from "../ui/switch";
 
 const FormSchema = z.object({
   threadLink: z

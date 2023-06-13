@@ -33,7 +33,7 @@ export default function Hero() {
         </span>
       </h1>
       <h2 className="mt-5 text-gray-600 sm:text-xl">
-        Seamlessly transform Twitter Threads to captivating LinkedIn Carousels
+        Seamlessly transform Twitter Threads into captivating LinkedIn Carousels
       </h2>
     </div>
   );
